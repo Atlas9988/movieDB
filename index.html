@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./scss/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__logo logo">
+                <a class="logo__link" href="./index.html">
+                    <img class="logo__image" src="./img/logo.svg" alt="MovieDB">
+                </a>
+            </div>
+
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Подборки</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">По жанру</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Фильмы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Сериалы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Мультфильмы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Аниме</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Актеры</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__searchbar searchbar">
+                <input class="searchbar__input" placeholder="Поиск по сайту" type="text">
+                <img class="searchbar__icon" src="./img/search-icon.svg" alt="Search">
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content swiper">
+                <div class="hero__posters swiper-wrapper">
+                    <div class="hero__poster swiper-slide">
+                        <div class="hero__breadcrumbs breadcrumbs">
+                            <span>Главная</span>
+                            /
+                            <span>Подборки</span>
+                            /
+                            <span>Лучшие фильмы всех времен</span>
+                        </div>
+                        <div class="hero__movie">
+                            <img class="hero__image" src="./img/hero-poster-1.png" alt="Marvel">
+                            <h2 class="hero__title">
+                                Лучшие фильмы всех времен
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="hero__poster swiper-slide">
+                        <div class="hero__breadcrumbs breadcrumbs">
+                            <span>Главная</span>
+                            /
+                            <span>Подборки</span>
+                            /
+                            <span>Лучшие фильмы всех времен</span>
+                        </div>
+                        <div class="hero__movie">
+                            <img class="hero__image" src="./img/hero-poster-1.png" alt="Marvel">
+                            <h2 class="hero__title">
+                                Лучшие фильмы всех времен
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="hero__poster swiper-slide">
+                        <div class="hero__breadcrumbs breadcrumbs">
+                            <span>Главная</span>
+                            /
+                            <span>Подборки</span>
+                            /
+                            <span>Лучшие фильмы всех времен</span>
+                        </div>
+                        <div class="hero__movie">
+                            <img class="hero__image" src="./img/hero-poster-1.png" alt="Marvel">
+                            <h2 class="hero__title">
+                                Лучшие фильмы всех времен
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="hero__poster swiper-slide">
+                        <div class="hero__breadcrumbs breadcrumbs">
+                            <span>Главная</span>
+                            /
+                            <span>Подборки</span>
+                            /
+                            <span>Лучшие фильмы всех времен</span>
+                        </div>
+                        <div class="hero__movie">
+                            <img class="hero__image" src="./img/hero-poster-1.png" alt="Marvel">
+                            <h2 class="hero__title">
+                                Лучшие фильмы всех времен
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <p class="hero__description">
+                    Мы собрали для Вас подборку лучших фильмов по теме “{название подборки}”
+                    с рейтингом от {минимальный рейтинг фильмов из подборки} и до {максимальный рейтинг фильмов из
+                    подборки}.
+                    В неё вошли фильмы следующих жанров: {жанр1}({число раз}), {жанр2}({число раз}), {жанр3}({число
+                    раз}).
+                    Самый новый фильм - {год} года, самый старый фильм - {год} года.
+                    Продолжительность фильмов от {минимальная продолжительность} до {максимальная продолжительность}.
+                    Выбирайте фильм и приятного просмотра!
+                </p>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <aside class="collection">
+                <h3 class="collection__title">Похожие коллекции</h3>
+                <div class="collection__row">
+                    <div class="collection__column">
+                        <img class="collection__poster" src="./img/collection-1.png" alt="Без жалости">
+                        <div class="collection__content">
+                            <div class="collection__date">
+                                <img class="collection__icon" src="./img/clock.svg" alt="Date">
+                                <span class="collection__created">2 недели назад</span>
+                            </div>
+                            <h3 class="collection__subtitle">Задача организации, в особенности же новая формировании.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="collection__column">
+                        <img class="collection__poster" src="./img/collection-2.png" alt="Без жалости">
+                        <div class="collection__content">
+                            <div class="collection__date">
+                                <img class="collection__icon" src="./img/clock.svg" alt="Date">
+                                <span class="collection__created">2 недели назад</span>
+                            </div>
+                            <h3 class="collection__subtitle">Задача организации, в особенности же новая формировании.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="collection__column">
+                        <img class="collection__poster" src="./img/collection-3.png" alt="Без жалости">
+                        <div class="collection__content">
+                            <div class="collection__date">
+                                <img class="collection__icon" src="./img/clock.svg" alt="Date">
+                                <span class="collection__created">2 недели назад</span>
+                            </div>
+                            <h3 class="collection__subtitle">Задача организации, в особенности же новая формировании.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="collection__column">
+                        <img class="collection__poster" src="./img/collection-4.png" alt="Без жалости">
+                        <div class="collection__content">
+                            <div class="collection__date">
+                                <img class="collection__icon" src="./img/clock.svg" alt="Date">
+                                <span class="collection__created">2 недели назад</span>
+                            </div>
+                            <h3 class="collection__subtitle">Задача организации, в особенности же новая формировании.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="collection__column">
+                        <img class="collection__poster" src="./img/collection-5.png" alt="Без жалости">
+                        <div class="collection__content">
+                            <div class="collection__date">
+                                <img class="collection__icon" src="./img/clock.svg" alt="Date">
+                                <span class="collection__created">2 недели назад</span>
+                            </div>
+                            <h3 class="collection__subtitle">Задача организации, в особенности же новая формировании.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <section class="selections">
+        <div class="container">
+            <h2 class="selections__title title">Лучшие фильмы подборки</h2>
+           <hr class="line-separator">
+           <div class="selections__swiper films">
+            <div class="films__row swiper-wrapper">
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/ishod.png" alt="Шан-Чи и легенда десяти колец">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Шан-Чи и легенда десяти колец  </h4>
+                    <span class="films__info">2020, Фантастика, Великобритания</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-3.png" alt="Гениальное ограбление">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Гениальное ограбление  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-4.png" alt="Персонаж">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Персонаж  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/ishod2.png" alt="Пассажиры">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Пассажиры  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>  
+               
+                
+            </div>
+            
+           </div>
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="selections">
+        <div class="container">
+            <h2 class="selections__title title">Лучшие фильмы подборки</h2>
+           <hr class="line-separator">
+           <div class="new-selections films">
+            <div class="films__row swiper-wrapper">
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>
+                <div class="films__column swiper-slide">
+                    <div class="films__poster">
+                        <img class="films__img" src="./img/selection-1.png" alt="Механик">
+                        <img class="films__kinopoisk" src="./img/rating-icon.svg" alt="">
+                        <img class="films__imdb" src="./img/rating-icon2.svg" alt="">
+                        <img class="films__play" src="./img/play.svg" alt="">
+                        <span class="films__watch">Смотреть</span>
+                    </div>
+                    <h4 class="films__subtitle h4">Механик  </h4>
+                    <span class="films__info">2020, Драма, США</span>
+                </div>  
+               
+                
+            </div>
+            
+           </div>
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+         new Swiper('.selections__swiper', {
+            loop: true,
+            slidesPerView: 5,
+            spaceBetween: 30,
+            autoplay: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            
+        });
+        new Swiper('.new-selections', {
+            loop: true,
+            slidesPerView: 5,
+            spaceBetween: 30,
+            autoplay: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            
+        });
+    </script>
+
+</body>
+
+</html>
